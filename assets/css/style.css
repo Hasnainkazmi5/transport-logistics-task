@@ -415,9 +415,16 @@
 .team-icons ul{
     justify-content: space-between;
 }
+
+
+
 .getinfo-wrapper{
     background-color: var(--secondary);
-    height: 600px;
+    height: 800px;
+}
+.getinfo-text-wrapper{
+    padding-top: 70px;
+    justify-content: space-between;
 }
 .info-text{
     width: 300px;
@@ -445,6 +452,19 @@
     color: white;
 }
 
+.info-form{
+    width: 650px;
+}
+.info-form input{
+    width: 260px;
+    margin-right: 20px;
+}
+.info-input::placeholder{
+    color: white;
+    font-weight: 400;
+    padding-left: 33px;
+}
+
 .info-form li{
     list-style-type: none;
 }
@@ -453,10 +473,14 @@
     border: 1px solid white;
 }
 .msg-input{
-    width: 370px;
-    height: 200px;
+    width: 538px !important;
+    height: 150px;
 }
-
+.msg-input::placeholder{
+    color: white;
+    font-weight: 400;
+    padding-left: 33px;
+}
 .info-imgs li{
     list-style-type: none;
 }
@@ -468,7 +492,20 @@
 
 
 
-
+.news-header{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(189, 196, 235, 0.5);
+}
+.news-header{
+    margin: 0 0 5px 65px;
+}
+.news-header p{
+    color: black;
+    padding: 2px 10px;
+    font-weight: bold;
+    border-left: 3px solid var(--primary);
+}
 .news-1{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -479,11 +516,27 @@
 .news-text{
     border-left: 1px solid black;
 }
+.news-text:hover h5{
+    color: var(--primary);
+}
 .news-1 li{
     list-style-type: none;
 }
+.news-main-img{
+    padding: 50px 20px;
+}
+.news-date-img{
+    padding: 50px 10px;
+}
+.news-text{
+    margin: 50px 10px;
+    padding-left: 25px !important;
+}
+.news-info{
+    margin-left: 23px;
+}
 .news-info li{
-    list-style-type: disc;
+    list-style-type: disc !important;
 }
 .news-2 li{
     list-style-type: none;
@@ -532,27 +585,631 @@
 
 .footer-main-ul{
     width: 233px;
+    padding: 0;
+    margin: 0 !important;
 }
 
 .footer-info{
     border-bottom: 1px solid white;
 }
-.footer-info li{
-    list-style-type: none;
+.footer-text-ul{
+    margin: 0 60px;
+    position: relative;
+    bottom: 44px;
+}
+.footer-text-ul a{
+    color: white;
 }
 .footer-info li p{
     color: white;
+    font-size: 12px;
 }
 .footer-info li h5{
     color: white;
+    margin-bottom: 44px;
+}
+.footer-input-ul{
+    margin: 0 60px;
+    position: relative;
+    bottom: 44px;
+}
+.footer-input::placeholder{
+    color: white;
+    font-weight: 400;
+    padding:10px 0 10px 20px;
+    background-color: var(--secondary);
 }
 
-.footer-f{
-    justify-content: space-between;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .navbar-nav{
+        display: none !important;
+       }
+       .hero-text {
+        margin-left: 60px;
+    }
+    .hero-text-header {
+        margin-bottom: 25px;
+    }
+    .hero-text p {
+        margin-bottom: 33px;
+    }
+    .p-banner-topimg img {
+        width: 99%;
+    }
+    .hero-footer-mainul{
+        display: block !important;
+    }
+    .h-mid-ul{
+        margin-top: 20px;
+    }
+    .h-right-ul-img1 img {
+        padding: 0 35px;
+    }
+    .h-right-ul-img2 img {
+        padding: 0 32px;
+    }
+    .p-banner-body-wrapper ul {
+        padding: 0;
+        display: block !important;
+    }
+    .p-banner-main-img {
+        display: none;
+    }
+    .p-banner-footer-wrapper {
+        padding: 10px 0px;
+    }
+    .banner-mainul {
+        padding-right: 40px;
+    }
+    .mt-1 {
+        font-size: 14px;
+    }
+    .transporting-header {
+        padding-left: 18%;
+    }
+    .card-img-top {
+        width: 105px;
+        height: 274px;
+        padding-top: 61px;
+    }
+    .transporting-btn a button {
+        left: 34%;
+    }
+    .transporting-wrapper {
+       
+        height: 300px;
+    }
+    .opportunity-mainul{
+        display: block !important;
+    }
+    .opportunity-textul{
+        display: flex;
+    }
+    .team{
+        margin-top: 425px;
+    }
+    .opportunity-left-icons{
+        margin-left: 40px;
+    
+    }
+    .opportunity-main-img {
+        width: 478px;
+        margin-left: -10px;
+    }
+    .opportunity-main-img-logo {
+        left: 131px;
+    }
+    .team-card img{
+        width: 100%;
+    }
+    .card-img-top{
+        height: 306px;
+    }
+    .team-card{
+        width: 260px;
+        height: 438px;
+        margin-left: 156px;
+        margin-bottom: 20px;
+    }
+    .team-icons {
+        left: 81px;
+    }
+    .team-header-titel {
+        margin: 0 0 5px 29px;
+    }
+    .team-header {
+        margin: 10px 0 42px 33%;
+    }
+    
+    .getinfo-wrapper {
+        height: 937px;
+    }
+    .getinfo-text-wrapper {
+        display: block !important;
+    }
+    .info-text {
+        width: 402px;
+    }
+    .info-form input {
+        width: 232px;
+    }
+    .msg-input {
+        width: 485px !important;
+    }
+    .info-imgs{
+        margin: 30px 0;
+    }
+    .info-imgs img {
+        width: 120px;
+        height: 123px;
+    }
+    .team-header {
+        margin: 10px 0 42px 25%;
+    }
+    .news-main-img {
+        padding: 133px 20px;
+        width: 233px;
+    }
+    .news-date-img {
+        padding: 133px 10px;
+    }
+    .f-main-ul{
+        display: block !important;
+    }
+    .footer-text {
+        height: 1023px;
+    }
+    .team-card img{
+    width: 100%;
 }
-.footer-f p{
-    color: white;
+.card-img-top{
+    height: 306px;
 }
-.footer-f li{
-    list-style-type: none;
+.team-card{
+    width: 260px;
+    height: 438px;
+    margin-left: 156px;
+    margin-bottom: 20px;
 }
+.team-icons {
+    left: 81px;
+}
+.team-header-titel {
+    margin: 0 0 5px 29px;
+}
+.team-header {
+    margin: 10px 0 42px 33%;
+}
+
+.getinfo-wrapper {
+    height: 937px;
+}
+.getinfo-text-wrapper {
+    display: block !important;
+}
+.info-text {
+    width: 402px;
+}
+.info-form input {
+    width: 232px;
+}
+.msg-input {
+    width: 485px !important;
+}
+.info-imgs{
+    margin: 30px 0;
+}
+.info-imgs img {
+    width: 120px;
+    height: 123px;
+}
+.team-header {
+    margin: 10px 0 42px 25%;
+}
+.news-main-img {
+    padding: 133px 20px;
+    width: 233px;
+}
+.news-date-img {
+    padding: 133px 10px;
+}
+.f-main-ul{
+    display: block !important;
+}
+.footer-text {
+    height: 1023px;
+}.team-card img{
+    width: 100%;
+}
+.card-img-top{
+    height: 306px;
+}
+.team-card{
+    width: 260px;
+    height: 438px;
+    margin-left: 156px;
+    margin-bottom: 20px;
+}
+.team-icons {
+    left: 81px;
+}
+.team-header-titel {
+    margin: 0 0 5px 29px;
+}
+.team-header {
+    margin: 10px 0 42px 33%;
+}
+
+.getinfo-wrapper {
+    height: 937px;
+}
+.getinfo-text-wrapper {
+    display: block !important;
+}
+.info-text {
+    width: 402px;
+}
+.info-form input {
+    width: 232px;
+}
+.msg-input {
+    width: 485px !important;
+}
+.info-imgs{
+    margin: 30px 0;
+}
+.info-imgs img {
+    width: 120px;
+    height: 123px;
+}
+.team-header {
+    margin: 10px 0 42px 25%;
+}
+.news-main-img {
+    padding: 133px 20px;
+    width: 233px;
+}
+.news-date-img {
+    padding: 133px 10px;
+}
+.f-main-ul{
+    display: block !important;
+}
+.footer-text {
+    height: 1023px;
+}.team-card img{
+    width: 100%;
+}
+.card-img-top{
+    height: 306px;
+}
+.team-card{
+    width: 260px;
+    height: 438px;
+    margin-left: 156px;
+    margin-bottom: 20px;
+}
+.team-icons {
+    left: 81px;
+}
+.team-header-titel {
+    margin: 0 0 5px 29px;
+}
+.team-header {
+    margin: 10px 0 42px 33%;
+}
+
+.getinfo-wrapper {
+    height: 937px;
+}
+.getinfo-text-wrapper {
+    display: block !important;
+}
+.info-text {
+    width: 402px;
+}
+.info-form input {
+    width: 232px;
+}
+.msg-input {
+    width: 485px !important;
+}
+.info-imgs{
+    margin: 30px 0;
+}
+.info-imgs img {
+    width: 120px;
+    height: 123px;
+}
+.team-header {
+    margin: 10px 0 42px 25%;
+}
+.news-main-img {
+    padding: 133px 20px;
+    width: 233px;
+}
+.news-date-img {
+    padding: 133px 10px;
+}
+.f-main-ul{
+    display: block !important;
+}
+.footer-text {
+    height: 1023px;
+}
+}
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+   .navbar-nav{
+    display: none !important;
+   }
+   .hero-text {
+    margin-left: 60px;
+}
+.hero-text-header {
+    margin-bottom: 25px;
+}
+.hero-text p {
+    margin-bottom: 33px;
+}
+.p-banner-topimg img {
+    width: 99%;
+}
+.hero-footer-mainul{
+    display: block !important;
+}
+.h-mid-ul{
+    margin-top: 20px;
+}
+.h-right-ul-img1 img {
+    padding: 0 35px;
+}
+.h-right-ul-img2 img {
+    padding: 0 32px;
+}
+.p-banner-body-wrapper ul {
+    padding: 0;
+    display: block !important;
+}
+.p-banner-main-img {
+    display: none;
+}
+.p-banner-footer-wrapper {
+    padding: 10px 0px;
+}
+.banner-mainul {
+    padding-right: 40px;
+}
+.mt-1 {
+    font-size: 14px;
+}
+.transporting-header {
+    padding-left: 18%;
+}
+.card-img-top {
+    width: 105px;
+    height: 274px;
+    padding-top: 61px;
+}
+.transporting-btn a button {
+    left: 34%;
+}
+.transporting-wrapper {
+   
+    height: 300px;
+}
+.opportunity-mainul{
+    display: block !important;
+}
+.opportunity-textul{
+    display: flex;
+}
+.team{
+    margin-top: 425px;
+}
+.opportunity-left-icons{
+    margin-left: 40px;
+
+}
+.opportunity-main-img {
+    width: 478px;
+    margin-left: -10px;
+}
+.opportunity-main-img-logo {
+    left: 131px;
+}
+.team-card img{
+    width: 100%;
+}
+.card-img-top{
+    height: 306px;
+}
+.team-card{
+    width: 260px;
+    height: 438px;
+    margin-left: 156px;
+    margin-bottom: 20px;
+}
+.team-icons {
+    left: 81px;
+}
+.team-header-titel {
+    margin: 0 0 5px 29px;
+}
+.team-header {
+    margin: 10px 0 42px 33%;
+}
+
+.getinfo-wrapper {
+    height: 937px;
+}
+.getinfo-text-wrapper {
+    display: block !important;
+}
+.info-text {
+    width: 402px;
+}
+.info-form input {
+    width: 232px;
+}
+.msg-input {
+    width: 485px !important;
+}
+.info-imgs{
+    margin: 30px 0;
+}
+.info-imgs img {
+    width: 120px;
+    height: 123px;
+}
+.team-header {
+    margin: 10px 0 42px 25%;
+}
+.news-main-img {
+    padding: 133px 20px;
+    width: 233px;
+}
+.news-date-img {
+    padding: 133px 10px;
+}
+.f-main-ul{
+    display: block !important;
+}
+.footer-text {
+    height: 1023px;
+}
+.hero-btn{
+    display: none;
+}
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .p-banner-topimg img{
+        width: 99% !important;
+    }
+
+    .opportunity-main-img{
+        width: 191px;
+    }
+    .p-banner-main-li{
+        width: 290px !important;
+    }
+    .p-banner-secondart-img {
+        width: 230px;
+        left: 50px;
+        bottom: 43px;
+    }
+    .banner-icons img{
+        width: 45px;
+    }   
+    .banner-icons h5{
+        font-size: 15px;
+    }   
+    .card-img, .card-img-bottom, .card-img-top {
+        width: 111%;
+        height: 237px;
+    }
+    .opportunity-main-img {
+        width: 394px;
+        margin-left: 0;
+    }
+    .opportunity-textul {
+        width: 126px !important;
+        padding: 90px 25px;
+    }
+    .opportunity-main-img-logo {
+        left: 88px;
+    }
+    .opportunity-text {
+        width: 257px;
+    }
+    .card-img, .card-img-bottom, .card-img-top {
+        width: 100%;
+    }
+    .team-icons {
+        width: 110px;
+        left: 92px;
+    }
+    .team-4-icons{
+        padding-left: 9px !important;
+    }
+    .info-form input{
+        width: 222px;
+    }
+    .msg-input{
+        width: 462px !important;
+    }
+    .info-imgs img {
+        width: 168px;
+        height: 191px;
+    }
+    .news-main-img{
+        width: 280px;
+    }
+    .footer-heading img {
+        width: 226px;
+    }
+    .footer-text-ul {
+        margin: 0px 26px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .p-banner-topimg img {
+        position: absolute;
+        width: 99%;
+        height: 400px;
+    }
+
+    .opportunity-main-img {
+        margin-left: 21px;
+    
+}
+   .opportunity-main-img-logo{
+    left: 300px !important;
+   }
+   .team-icons {
+    left: 122px;
+   }
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) { 
+   
+}
+
+/* XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
+
+
+
+
