@@ -687,9 +687,12 @@ body.loaded #preloader {
 
 /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-    .navbar-nav{
-        display: none !important;
-       }
+    .nav-social {
+        padding-left: 10px;
+    }
+    .nav-link-bb span {
+        border-left: none;
+    }
        .hero-text {
         margin-left: 60px;
     }
@@ -1028,9 +1031,12 @@ body.loaded #preloader {
 
 /* Small devices (landscape phones, less than 768px)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
-   .navbar-nav{
-    display: none !important;
-   }
+    .nav-social {
+        padding-left: 10px;
+    }
+    .nav-link-bb span {
+        border-left: none;
+    }
    .hero-text {
     margin-left: 60px;
 }
