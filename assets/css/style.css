@@ -12,7 +12,9 @@
     list-style-type: none !important;
     text-decoration: none !important;
 }
-
+body{
+    overflow-x: hidden !important;
+}
 body.loaded #preloader {
     display: none;
   }
