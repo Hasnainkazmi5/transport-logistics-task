@@ -703,6 +703,9 @@ body.loaded #preloader {
        .hero-text {
         margin-left: 60px;
     }
+    .hero-img {
+    height: 970px;
+    }
     .hero-text-header {
         margin-bottom: 25px;
     }
@@ -1031,6 +1034,9 @@ body.loaded #preloader {
     }
     .nav-link-bb span {
         border-left: none;
+    }
+    .hero-img {
+    height: 970px;
     }
    .hero-text {
     margin-left: 60px;
