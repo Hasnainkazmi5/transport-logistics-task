@@ -675,7 +675,14 @@ body.loaded #preloader {
 
 
 
-
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 
 
@@ -1008,18 +1015,6 @@ body.loaded #preloader {
 }
 }
 
-
-
-
-
-@keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
   
   
   
@@ -1172,9 +1167,7 @@ body.loaded #preloader {
 .footer-text {
     height: 1023px;
 }
-.hero-btn{
-    display: none;
-}
+
 
 
 
