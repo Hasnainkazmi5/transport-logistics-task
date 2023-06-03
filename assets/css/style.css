@@ -12,9 +12,9 @@
     list-style-type: none !important;
     text-decoration: none !important;
 }
-body{
+/* body{
     overflow-x: hidden !important;
-}
+} */
 body.loaded #preloader {
     display: none;
   }
@@ -150,7 +150,6 @@ body.loaded #preloader {
 .nav-social{
     padding-left: 200px;
 }
-
 .hero-img {
     position: relative;
     height: 600px;
@@ -197,7 +196,6 @@ body.loaded #preloader {
     background-color: white;
     padding: 0;
 }
-
 .hero-footer-mainul {
     justify-content: space-between;
 }
@@ -250,7 +248,6 @@ body.loaded #preloader {
 .h-right-ul-img2 img{
     padding: 0 30px;
 }
-
 .p-banner-topimg img {
     position: absolute;
     width: 100%;
@@ -329,7 +326,6 @@ body.loaded #preloader {
     justify-content: space-between;
 }
 
-
 .transporting-wrapper{
     width: 100%;
     height: 250px;
@@ -379,9 +375,7 @@ body.loaded #preloader {
     background-color: white;
     color: black;
   }
-
-
-.opportunity-wrapper{
+  .opportunity-wrapper{
     margin-top: 50px;
     width: 50%;
     height: 500px;
@@ -469,7 +463,6 @@ body.loaded #preloader {
 }
 
 
-
 .getinfo-wrapper{
     background-color: var(--secondary);
     height: 800px;
@@ -541,9 +534,6 @@ body.loaded #preloader {
     height: 191px;
 }
 
-
-
-
 .news-header{
     width: 100px;
     height: 30px;
@@ -612,14 +602,6 @@ body.loaded #preloader {
     border-bottom: 1px solid black;
 }
 
-
-
-
-
-
-
-
-
 .footer-img img{
     width: 100%;
 }
@@ -672,11 +654,6 @@ body.loaded #preloader {
     background-color: var(--secondary);
 }
 
-
-
-
-
-
 @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -692,10 +669,13 @@ body.loaded #preloader {
 
 
 
-
-
-/* X-Small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
+@media only screen and (min-width: 200px) and (max-width: 575.98px) { 
+    body{
+        overflow-x: hidden !important;
+    }
+    .secondary-navbar .navbar {
+        width: 100% !important;
+    }
     .nav-social {
         padding-left: 10px;
     }
@@ -736,11 +716,18 @@ body.loaded #preloader {
     .p-banner-main-img {
         display: none;
     }
-    .p-banner-footer-wrapper {
-        padding: 10px 0px;
+    .p-banner-secondart-img {
+        position: absolute;
+        left: 59px;
+        bottom: -280px;
     }
+    .p-banner-footer-wrapper {
+        padding: 100px 0px 20px 0;
+    }
+
     .banner-mainul {
-        padding-right: 40px;
+        padding-right: 0px;
+        padding-left: 12px;
     }
     .mt-1 {
         font-size: 14px;
@@ -753,6 +740,9 @@ body.loaded #preloader {
         height: 274px;
         padding-top: 61px;
     }
+    .col-md-2 {
+        width: 16.666667% !important;
+    }
     .transporting-btn a button {
         left: 34%;
     }
@@ -763,22 +753,25 @@ body.loaded #preloader {
     .opportunity-mainul{
         display: block !important;
     }
-    .opportunity-textul{
-        display: flex;
+    .opportunity-textul {
+        display: block;
     }
     .team{
         margin-top: 425px;
     }
-    .opportunity-left-icons{
-        margin-left: 40px;
-    
+    .opportunity-left-icons {
+        margin-left: 18px;
+    }
+    .opportunity-text {
+        width: 315px;
     }
     .opportunity-main-img {
-        width: 478px;
-        margin-left: -10px;
+        width: 353px;
+    margin-left: -40px;
     }
+
     .opportunity-main-img-logo {
-        left: 131px;
+        left: 42px !important;
     }
     .team-card img{
         width: 100%;
@@ -787,10 +780,7 @@ body.loaded #preloader {
         height: 306px;
     }
     .team-card{
-        width: 260px;
-        height: 438px;
-        margin-left: 156px;
-        margin-bottom: 20px;
+        margin-left: 58px !important;
     }
     .team-icons {
         left: 81px;
@@ -801,7 +791,7 @@ body.loaded #preloader {
     .team-header {
         margin: 10px 0 42px 33%;
     }
-    
+
     .getinfo-wrapper {
         height: 937px;
     }
@@ -809,10 +799,13 @@ body.loaded #preloader {
         display: block !important;
     }
     .info-text {
-        width: 402px;
+        width: 313px;
     }
     .info-form input {
-        width: 232px;
+        width: 222px !important;
+    }
+    .info-form ul {
+        display: block !important;
     }
     .msg-input {
         width: 485px !important;
@@ -821,18 +814,32 @@ body.loaded #preloader {
         margin: 30px 0;
     }
     .info-imgs img {
-        width: 120px;
+        width: 77px !important;
         height: 123px;
     }
+/* ---------------------------------------------------------------------------------------------------------------------- */
+    .info-form{
+        display: none;
+    }
+
     .team-header {
         margin: 10px 0 42px 25%;
     }
+    .news-1 ul{
+        display: block !important;
+    }
+    .news-2 ul{
+        display: block !important;
+    }
+    .news-3 ul{
+        display: block !important;
+    }
     .news-main-img {
         padding: 133px 20px;
-        width: 233px;
+        width: 367px;
     }
     .news-date-img {
-        padding: 133px 10px;
+        padding: 19px 10px;
     }
     .f-main-ul{
         display: block !important;
@@ -840,197 +847,21 @@ body.loaded #preloader {
     .footer-text {
         height: 1023px;
     }
-    .team-card img{
-    width: 100%;
-}
-.card-img-top{
-    height: 306px;
-}
-.team-card{
-    width: 260px;
-    height: 438px;
-    margin-left: 156px;
-    margin-bottom: 20px;
-}
-.team-icons {
-    left: 81px;
-}
-.team-header-titel {
-    margin: 0 0 5px 29px;
-}
-.team-header {
-    margin: 10px 0 42px 33%;
 }
 
-.getinfo-wrapper {
-    height: 937px;
-}
-.getinfo-text-wrapper {
-    display: block !important;
-}
-.info-text {
-    width: 402px;
-}
-.info-form input {
-    width: 232px;
-}
-.msg-input {
-    width: 485px !important;
-}
-.info-imgs{
-    margin: 30px 0;
-}
-.info-imgs img {
-    width: 120px;
-    height: 123px;
-}
-.team-header {
-    margin: 10px 0 42px 25%;
-}
-.news-main-img {
-    padding: 133px 20px;
-    width: 233px;
-}
-.news-date-img {
-    padding: 133px 10px;
-}
-.f-main-ul{
-    display: block !important;
-}
-.footer-text {
-    height: 1023px;
-}.team-card img{
-    width: 100%;
-}
-.card-img-top{
-    height: 306px;
-}
-.team-card{
-    width: 260px;
-    height: 438px;
-    margin-left: 156px;
-    margin-bottom: 20px;
-}
-.team-icons {
-    left: 81px;
-}
-.team-header-titel {
-    margin: 0 0 5px 29px;
-}
-.team-header {
-    margin: 10px 0 42px 33%;
-}
 
-.getinfo-wrapper {
-    height: 937px;
-}
-.getinfo-text-wrapper {
-    display: block !important;
-}
-.info-text {
-    width: 402px;
-}
-.info-form input {
-    width: 232px;
-}
-.msg-input {
-    width: 485px !important;
-}
-.info-imgs{
-    margin: 30px 0;
-}
-.info-imgs img {
-    width: 120px;
-    height: 123px;
-}
-.team-header {
-    margin: 10px 0 42px 25%;
-}
-.news-main-img {
-    padding: 133px 20px;
-    width: 233px;
-}
-.news-date-img {
-    padding: 133px 10px;
-}
-.f-main-ul{
-    display: block !important;
-}
-.footer-text {
-    height: 1023px;
-}.team-card img{
-    width: 100%;
-}
-.card-img-top{
-    height: 306px;
-}
-.team-card{
-    width: 260px;
-    height: 438px;
-    margin-left: 156px;
-    margin-bottom: 20px;
-}
-.team-icons {
-    left: 81px;
-}
-.team-header-titel {
-    margin: 0 0 5px 29px;
-}
-.team-header {
-    margin: 10px 0 42px 33%;
-}
 
-.getinfo-wrapper {
-    height: 937px;
-}
-.getinfo-text-wrapper {
-    display: block !important;
-}
-.info-text {
-    width: 402px;
-}
-.info-form input {
-    width: 232px;
-}
-.msg-input {
-    width: 485px !important;
-}
-.info-imgs{
-    margin: 30px 0;
-}
-.info-imgs img {
-    width: 120px;
-    height: 123px;
-}
-.team-header {
-    margin: 10px 0 42px 25%;
-}
-.news-main-img {
-    padding: 133px 20px;
-    width: 233px;
-}
-.news-date-img {
-    padding: 133px 10px;
-}
-.f-main-ul{
-    display: block !important;
-}
-.footer-text {
-    height: 1023px;
-}
-}
 
-  
-  
-  
-  
-  
 
-  
 
+/* ------------------------------------------------------ */
 
 /* Small devices (landscape phones, less than 768px)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
+@media only screen and (min-width: 576px) and (max-width: 767.98px) { 
+
+    body{
+    overflow-x: hidden !important;
+}
     .nav-social {
         padding-left: 10px;
     }
@@ -1182,7 +1013,7 @@ body.loaded #preloader {
 }
 
 /* Medium devices (tablets, less than 992px)*/
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media only screen and (min-width: 768px) and (max-width: 991.98px) { 
     .p-banner-topimg img{
         width: 99% !important;
     }
@@ -1254,7 +1085,7 @@ body.loaded #preloader {
 }
 
 /* Large devices (desktops, less than 1200px)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) { 
     .p-banner-topimg img {
         position: absolute;
         width: 99%;
