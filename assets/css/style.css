@@ -299,32 +299,70 @@ body.loaded #preloader {
     border: 20px solid white;
 }
 
-.p-banner-footer {
-    margin-top: 400px;
-    justify-content: space-between;
-}
-.p-banner-footer-wrapper {
-    padding: 10px 120px;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgray;
-}
-.p-banner-footer-wrapper ul {
-    padding-top: 20px;
-}
-.p-banner-footer-wrapper h3 {
-    font-weight: 700;
-}
-.banner-mainul{
-    border-right: 1px solid lightgrey;
-    padding-right: 106px;
-}
-.banner-footer-icon{
-    width: 15px;
-}
+
+
+
 
 .p-banner-footer-wrapper {
-    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    background:  url(../imgs/home/banner.jpg) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 150px;
 }
+
+.p-banner-footer .p-banner-footer-wrapper .container {
+    background-color: #fff;
+}
+
+.p-banner-footer .p-banner-footer-wrapper .container .row .col-md-6 h1 {
+    color: var(--primary2);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.p-banner-footer .p-banner-footer-wrapper .container .row .col-md-6 p {
+    color: var(--paragrah-font-color);
+    font-weight: 500;
+}
+
+.p-banner-footer .p-banner-footer-wrapper .container .row .right>figure {
+    position: relative;
+    width: 100%;
+}
+
+.p-banner-footer .p-banner-footer-wrapper .container .row .right>figure>img {
+    width: 100%;
+}
+
+.p-banner-footer .p-banner-footer-wrapper .container .row .right figure>figure {
+    background-color: white;
+    padding: 5%;
+    position: absolute;
+    left: -18%;
+    bottom: -19%;
+    width: 70%;
+}
+
+.p-banner-footer .p-banner-footer-wrapper .container .row .col-md-6 figure>figure>img {
+    width: 100%;
+}
+
+.p-banner-footer .p-banner-footer-wrapper .container .row .col-md-6 ul {
+    padding: 6px 0;
+    border: 1px solid #D5D5D5;
+    margin-top: 10px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.p-banner-footer .p-banner-footer-wrapper .container .row .col-md-6 ul li h1 {
+    font-size: 40px;
+}
+
+
 
 .transporting-wrapper{
     width: 100%;
@@ -461,6 +499,74 @@ body.loaded #preloader {
 .team-icons ul{
     justify-content: space-between;
 }
+
+
+
+
+/* ------------------------testimonial------------------- */
+
+.testimonial{ 
+    background: #F4F4F4;
+    height: 1000px;
+width: 100%;
+
+}
+
+.testimonial .testimonial-card {
+    height: 425px;
+width: 460px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+padding: 62px 35px 62px 35px;
+transition: all .6s ease;
+}
+.testimonial .testimonial-card-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonial .testimonial-card .t-card-top>.left>img{
+width: 76px;
+margin-bottom: 12px;
+}
+.testimonial .testimonial-card .t-card-top>.left>.heading h4{
+transition: all .6s ease;
+}
+.testimonial .testimonial-card .t-card-top>.left>.heading p{
+transition: all .6s ease;
+}
+.testimonial .testimonial-card .t-card-body p{
+transition: all .6s ease;
+}
+.testimonial .testimonial-card:hover .t-card-body p{
+color: white;}
+.testimonial .testimonial-card:hover .t-card-top>.left>.heading h4{
+color: white;}
+.testimonial .testimonial-card:hover .t-card-top>.left>.heading p{
+color: white;
+}
+
+.testimonial .testimonial-card:hover {
+  background-color: var(--secondary);
+}
+
+
+.home-testimonial{
+    background-color: #fff;
+}
+
+
+
+/* ------------------------testimonial------------------- */
+
+
+
+
+
+
 
 
 .getinfo-wrapper{
@@ -654,6 +760,11 @@ body.loaded #preloader {
     background-color: var(--secondary);
 }
 
+
+
+
+
+
 @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -737,7 +848,7 @@ body.loaded #preloader {
     }
     .card-img-top {
         width: 105px;
-        height: 274px;
+        height: 365px !important;
         padding-top: 61px;
     }
     .col-md-2 {
