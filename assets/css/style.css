@@ -307,10 +307,9 @@ body.loaded #preloader {
     width: 100%;
     height: fit-content;
     position: relative;
-    background:  url(../imgs/home/banner.jpg) ;
     background-size: 100%;
     background-repeat: no-repeat;
-    padding-top: 150px;
+    padding-top: 330px;
 }
 
 .p-banner-footer .p-banner-footer-wrapper .container {
